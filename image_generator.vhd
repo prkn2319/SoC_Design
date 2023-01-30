@@ -61,9 +61,64 @@ begin
 		Rom_Addr => ball_rom_addr,
 		Ball_en => ball_en);	
 		
+	--rom for ball rgb
+	U_ROM_BALL : entity work.img_rom_16bit port map (
+		clka => clk,
+		addra => ball_rom_addr,
+		douta => rgb_ball);
 		
-	-- need to include 11 vivado rom instances (10 digits 32x32, 1 ball 16x16)
+	--roms for each score rgb
+	U_ROM_SCR0 : entity work.img_rom_32bit_0 port map (
+		clka => clk,
+		addra => score_rom_addr,
+		douta => rgb_scores(0));
 		
+	U_ROM_SCR1 : entity work.img_rom_32bit_1 port map (
+		clka => clk,
+		addra => score_rom_addr,
+		douta => rgb_scores(1));
+		
+	U_ROM_SCR2 : entity work.img_rom_32bit_2 port map (
+		clka => clk,
+		addra => score_rom_addr,
+		douta => rgb_scores(2));
+		
+	U_ROM_SCR3 : entity work.img_rom_32bit_3 port map (
+		clka => clk,
+		addra => score_rom_addr,
+		douta => rgb_scores(3));
+		
+	U_ROM_SCR4 : entity work.img_rom_32bit_4 port map (
+		clka => clk,
+		addra => score_rom_addr,
+		douta => rgb_scores(4));
+		
+	U_ROM_SCR5 : entity work.img_rom_32bit_5 port map (
+		clka => clk,
+		addra => score_rom_addr,
+		douta => rgb_scores(5));
+		
+	U_ROM_SCR6 : entity work.img_rom_32bit_6 port map (
+		clka => clk,
+		addra => score_rom_addr,
+		douta => rgb_scores(6));
+		
+	U_ROM_SCR7 : entity work.img_rom_32bit_7 port map (
+		clka => clk,
+		addra => score_rom_addr,
+		douta => rgb_scores(7));
+		
+	U_ROM_SCR8 : entity work.img_rom_32bit_8 port map (
+		clka => clk,
+		addra => score_rom_addr,
+		douta => rgb_scores(8));
+		
+	U_ROM_SCR9 : entity work.img_rom_32bit_9 port map (
+		clka => clk,
+		addra => score_rom_addr,
+		douta => rgb_scores(9));
+		
+	--main rgb assignment process
 	process(clk)
 	begin
 		red <= (others => '0');
