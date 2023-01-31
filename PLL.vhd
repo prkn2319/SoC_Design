@@ -7,7 +7,7 @@ entity PLL is
 	-- 	WIDTH : positive := 32
 	-- );
 	port (
-		ClkIn : in std_logic;
+		ClkIn, Reset : in std_logic;
         CntIn : in std_logic_vector(31 downto 0);
 		PLLOut : out std_logic_vector(31 downto 0)
 	);
@@ -18,10 +18,19 @@ architecture BHV of PLL is
 --NOT FUNCTIONAL
 begin
 	
-	process(PCWriteIn) 
-	begin	
-		if( PCWriteIn = '1') then
-    		PCOut <= MuxIn;
+	process(clk,reset)
+	begin
+		if(reset='1') then
+			count<=1;
+			tmp<='0';
+		elsif(clk'event and clk='1') then
+			count <=count+1;
+			if (count = 25000) then
+				tmp <= NOT tmp;
+				count <= 1;
+			end if;
 		end if;
+	clock_out <= tmp;
 	end process;
+	
 end BHV;
