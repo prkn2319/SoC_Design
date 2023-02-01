@@ -67,7 +67,9 @@ begin
             ball_x => ball_x,
             ball_y => ball_y,
             left_pad => left_pad,
-            right_pad => right_pad
+            right_pad => right_pad,
+            score1 => score1,
+            score2 => score2
         );
 
     U_IMAGE_GENERATOR : entity work.image_generator
