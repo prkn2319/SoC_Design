@@ -8,7 +8,7 @@ use ieee.numeric_std.all;
 --ball constant x velocity of 10 pixels
 
 entity game_controller is 
-    generic (WIDTH : positive := 16);
+    generic (WIDTH : positive := 10);
     port (
         rst : in std_logic;
         clk : in std_logic;
