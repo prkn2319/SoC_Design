@@ -5,8 +5,8 @@ use ieee.math_real.all;
 
 
 entity PLL is
-    generic(clk_in_freq  : natural := 50000000;  -- Input clock frequency
-            clk_out_freq : natural := 1000); -- Output clock frequency
+    generic(clk_in_freq  : natural := 100000000;  -- Input clock frequency
+            clk_out_freq : natural := 25000000); -- Output clock frequency
     port (
         clk_in  : in  std_logic;
         clk_out : out std_logic;
