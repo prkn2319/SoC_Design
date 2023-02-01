@@ -19,8 +19,9 @@ entity game_controller is
         ball_x    : out std_logic_vector(WIDTH-1 downto 0);
         ball_y    : out std_logic_vector(WIDTH-1 downto 0);
         left_pad  : out std_logic_vector(WIDTH-1 downto 0);
-        right_pad : out std_logic_vector(WIDTH-1 downto 0)
-        --RGB       : out std_logic_vector(23 downto 0)
+        right_pad : out std_logic_vector(WIDTH-1 downto 0);
+        score1 : out integer;
+        score2 : out integer
     );
 end game_controller;
 
@@ -43,6 +44,8 @@ begin
         if (rst = '1' OR game_reset <= '1') then
             
             game_reset <= '0';
+            score1 <= 0;
+            score2 <= 0;
             ball_xpos <= (others => '0');
             ball_ypos <= (others => '0');
             ball_yvect <= (others => '0');
@@ -108,8 +111,12 @@ begin
             elsif (ball_ypos = 0 OR ball_ypos = 480) then
                 ball_yvect <= -ball_yvect;
             -- ball hits side, game resets
-            elsif (ball_xpos = 0 OR ball_xpos = 640) then
+            elsif (ball_xpos = 0) then
+                game_rest <= '1';
+                score2 <= score2 + 1;
+            elsif (ball_xpos = 639) then
                 game_reset <= '1';
+                score1 <= score1 + 1;
             end if;
 
             -- ASSIGN OUTPUT (may need to make outputs combinational to avoid clock cycle delay)
