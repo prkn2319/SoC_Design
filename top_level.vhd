@@ -36,7 +36,7 @@ begin
 
     U_PLL : entity work.PLL
         generic map (
-            clk_in_freq  => 50000000,
+            clk_in_freq  => 100000000,
             clk_out_freq => 25000000)
         port map (
             clk_in => clk,
