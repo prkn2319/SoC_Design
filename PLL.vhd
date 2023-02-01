@@ -1,36 +1,51 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.numeric_std.all; 
+use ieee.numeric_std.all;
+use ieee.math_real.all;
+
 
 entity PLL is
-	-- generic (
-	-- 	WIDTH : positive := 32
-	-- );
-	port (
-		ClkIn, Reset : in std_logic;
-        CntIn : in std_logic_vector(31 downto 0);
-		PLLOut : out std_logic_vector(31 downto 0)
-	);
-end PC;
+    generic(clk_in_freq  : natural := 50000000;  -- Input clock frequency
+            clk_out_freq : natural := 1000); -- Output clock frequency
+    port (
+        clk_in  : in  std_logic;
+        clk_out : out std_logic;
+        rst     : in  std_logic);
+end PLL;
 
-architecture BHV of PLL is
 
---NOT FUNCTIONAL
+architecture arch of PLL is
+
+	signal count : integer;
+	signal clk : std_logic := '0';
+
 begin
-	
-	process(clk,reset)
+
+	process(clk_in, rst)
 	begin
-		if(reset='1') then
-			count<=1;
-			tmp<='0';
-		elsif(clk'event and clk='1') then
-			count <=count+1;
-			if (count = 25000) then
-				tmp <= NOT tmp;
-				count <= 1;
+		
+		if (rst = '1') then
+			clk <= '0';
+			count <= 0;
+		
+		elsif (rising_edge(clk_in)) then
+			
+			if (count = (clk_in_freq/(clk_out_freq*2))) then
+				count <= 0;
+				
+				if (clk = '0') then
+					clk <= '1';
+				else
+					clk <= '0';
+				end if;
+				
+			else
+				count <= count + 1;
+				
 			end if;
 		end if;
-	clock_out <= tmp;
 	end process;
 	
-end BHV;
+	clk_out <= clk;
+
+end arch;
