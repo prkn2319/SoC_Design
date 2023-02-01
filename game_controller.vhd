@@ -35,6 +35,8 @@ architecture arch of game_controller is
     signal ball_yvect : signed(WIDTH-1 downto 0);
     signal left_pad_pos : unsigned(WIDTH-1 downto 0);
     signal right_pad_pos : unsigned(WIDTH-1 downto 0);
+    signal score1_sig : integer;
+    signal score2_sig : integer;
 
 begin
 
@@ -112,11 +114,11 @@ begin
                 ball_yvect <= -ball_yvect;
             -- ball hits side, game resets
             elsif (ball_xpos = 0) then
-                game_rest <= '1';
-                score2 <= score2 + 1;
+                game_reset <= '1';
+                score2_sig <= score2_sig + 1;
             elsif (ball_xpos = 639) then
                 game_reset <= '1';
-                score1 <= score1 + 1;
+                score1_sig <= score1_sig + 1;
             end if;
 
             -- ASSIGN OUTPUT (may need to make outputs combinational to avoid clock cycle delay)
@@ -131,6 +133,8 @@ begin
             ball_y <= std_logic_vector(signed(ball_ypos) + ball_yvect);
             left_pad <= std_logic_vector(left_pad_pos);
             right_pad <= std_logic_vector(right_pad_pos);
+            score1 <= score1_sig;
+            score2 <= score2_sig;
 
 
         end if;
