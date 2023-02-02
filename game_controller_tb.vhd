@@ -14,10 +14,10 @@ architecture testbench of game_controller_tb is
     signal in2 : std_logic := '0';
     signal in3 : std_logic := '0';
     signal in4 : std_logic := '0';
-    signal ball_x    : std_logic_vector(WIDTH-1 downto 0);
-    signal ball_y    : std_logic_vector(WIDTH-1 downto 0);
-    signal left_pad  : std_logic_vector(WIDTH-1 downto 0);
-    signal right_pad : std_logic_vector(WIDTH-1 downto 0);
+    signal ball_x    : std_logic_vector(9 downto 0);
+    signal ball_y    : std_logic_vector(9 downto 0);
+    signal left_pad  : std_logic_vector(9 downto 0);
+    signal right_pad : std_logic_vector(9 downto 0);
     signal score1    : std_logic_vector(3 downto 0);
     signal score2    : std_logic_vector(3 downto 0);
 
@@ -47,6 +47,16 @@ begin
         rst <= '0';
 
         clk <= '1';
+        wait for 10 ns;
+        clk <= '0';
+        wait for 10 ns;
+        in2 <= '1';
+        in4 <= '1';
+        clk <= '1';
+        wait for 10 ns;
+        clk <= '0';
+        wait for 10 ns;
+        wait;
 
     end process;
 
