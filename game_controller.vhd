@@ -46,6 +46,7 @@ begin
         if (rst = '1' OR game_reset <= '1') then
             
             game_reset <= '0';
+            direction_right <= '0';
             score1_sig <= (others => '0');
             score2_sig <= (others => '0');
             score1 <= (others => '0');

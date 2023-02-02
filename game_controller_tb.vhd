@@ -45,6 +45,7 @@ begin
         rst <= '1';
         wait for 10 ns;
         rst <= '0';
+        wait for 10 ns;
 
         clk <= '1';
         wait for 10 ns;

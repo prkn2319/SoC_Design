@@ -46,13 +46,14 @@ begin
         if (rst = '1' OR game_reset <= '1') then
             
             game_reset <= '0';
-            score1_sig <= (others => '0');
-            score2_sig <= (others => '0');
+            direction_right <= '0';
             ball_xpos <= "0101000000";
             ball_ypos <= "0011110000";
             ball_yvect <= (others => '0');
             left_pad_pos <= (others => '0');
             right_pad_pos <= (others => '0');
+            score1_sig <= (others => '0');
+            score2_sig <= (others => '0');
         
         elsif (rising_edge(clk)) then
             
