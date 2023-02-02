@@ -137,8 +137,8 @@ begin
             ball_y <= std_logic_vector(signed(ball_ypos) + ball_yvect);
             left_pad <= std_logic_vector(left_pad_pos);
             right_pad <= std_logic_vector(right_pad_pos);
-            score1 <= score1_sig;
-            score2 <= score2_sig;
+            score1 <= std_logic_vector(score1_sig);
+            score2 <= std_logic_vector(score2_sig);
 
 
         end if;
