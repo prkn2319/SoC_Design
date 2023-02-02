@@ -125,6 +125,14 @@ begin
                 direction_right <= '0';
             end if;
 
+            --CALCULATE X and Y
+            if (direction_right = '0') then
+                ball_xpos <= ball_xpos - 10;
+            else
+                ball_xpos <= ball_xpos + 10;
+            end if;
+            ball_ypos <= unsigned(signed(ball_ypos) + ball_yvect);
+
 
         end if;
     end process;
@@ -133,14 +141,7 @@ begin
     begin
 
        -- ASSIGN OUTPUT (may need to make outputs combinational to avoid clock cycle delay)
-        if (direction_right = '0') then
-            ball_xpos <= ball_xpos - 10;
-            ball_x <= std_logic_vector(ball_xpos - 10);
-        else
-            ball_xpos <= ball_xpos + 10;
-            ball_x <= std_logic_vector(ball_xpos + 10);
-        end if;
-        ball_ypos <= unsigned(signed(ball_ypos) + ball_yvect);
+        ball_x <= std_logic_vector(ball_xpos);
         ball_y <= std_logic_vector(signed(ball_ypos) + ball_yvect);
         left_pad <= std_logic_vector(left_pad_pos);
         right_pad <= std_logic_vector(right_pad_pos);

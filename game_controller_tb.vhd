@@ -23,7 +23,7 @@ architecture testbench of game_controller_tb is
 
 begin
 
-    U : entity work.game_controller
+    U : entity work.game_controller_test
         port map (
             rst => rst,
             clk => clk,
