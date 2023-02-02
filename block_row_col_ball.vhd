@@ -45,7 +45,7 @@ begin
 		begin
 			-- draw center
 			if (unsigned(Hcount) >= unsigned(ball_x) AND unsigned(Hcount) <= unsigned(ball_x)+15) then
-				temp := (unsigned(Hcount) - unsigned(ball_x))/2;
+				temp := (unsigned(Hcount) - unsigned(ball_x));
 				ball_x_en <='1';
 			else 
 				temp := (others => '0');

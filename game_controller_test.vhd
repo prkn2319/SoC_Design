@@ -129,10 +129,10 @@ begin
         end if;
     end process;
 
-    process (direction_right)
+    process (direction_right, ball_xpos, ball_ypos, ball_yvect, left_pad_pos, right_pad_pos, score1_sig, score2_sig)
     begin
 
-        -- ASSIGN OUTPUT (may need to make outputs combinational to avoid clock cycle delay)
+       -- ASSIGN OUTPUT (may need to make outputs combinational to avoid clock cycle delay)
         if (direction_right = '0') then
             ball_xpos <= ball_xpos - 10;
             ball_x <= std_logic_vector(ball_xpos - 10);
@@ -140,6 +140,12 @@ begin
             ball_xpos <= ball_xpos + 10;
             ball_x <= std_logic_vector(ball_xpos + 10);
         end if;
+        ball_ypos <= unsigned(signed(ball_ypos) + ball_yvect);
+        ball_y <= std_logic_vector(signed(ball_ypos) + ball_yvect);
+        left_pad <= std_logic_vector(left_pad_pos);
+        right_pad <= std_logic_vector(right_pad_pos);
+        score1 <= std_logic_vector(score1_sig);
+        score2 <= std_logic_vector(score2_sig);
 
     end process;
 
