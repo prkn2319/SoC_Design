@@ -46,15 +46,17 @@ begin
         if (rst = '1' OR game_reset <= '1') then
             
             game_reset <= '0';
+            score1_sig <= 0;
+            score2_sig <= 0;
             score1 <= 0;
             score2 <= 0;
-            ball_xpos <= (others => '0');
-            ball_ypos <= (others => '0');
+            ball_xpos <= "0101000000";
+            ball_ypos <= "0011110000";
             ball_yvect <= (others => '0');
             left_pad_pos <= (others => '0');
             right_pad_pos <= (others => '0');
-            ball_x <= (others => '0');
-            ball_y <= (others => '0');
+            ball_x <= "0101000000";
+            ball_y <= "0011110000";
             left_pad <= (others => '0');
             right_pad <= (others => '0');
         
@@ -116,9 +118,11 @@ begin
             elsif (ball_xpos = 0) then
                 game_reset <= '1';
                 score2_sig <= score2_sig + 1;
+                direction_right <= '1';
             elsif (ball_xpos = 639) then
                 game_reset <= '1';
                 score1_sig <= score1_sig + 1;
+                direction_right <= '0';
             end if;
 
             -- ASSIGN OUTPUT (may need to make outputs combinational to avoid clock cycle delay)
