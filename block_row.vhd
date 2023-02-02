@@ -21,7 +21,7 @@ begin
 		begin
 			-- draw center
 			if (unsigned(Vcount) >= P1_Y_START AND unsigned(Vcount) <= P1_Y_END) then
-				temp := (unsigned(Vcount) - P1_Y_START)/2;
+				temp := (unsigned(Vcount) - P1_Y_START);
 				Score_en <='1';
 			else 
 				temp := (others => '0');

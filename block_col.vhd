@@ -21,10 +21,10 @@ begin
 		begin
 		-- draw center
 			if (unsigned(Hcount) >= P1_X_START AND unsigned(Hcount) <= P1_X_END) then
-				temp := (unsigned(Hcount) - P1_X_START)/2;
+				temp := (unsigned(Hcount) - P1_X_START);
 				PS_en <="01";
 			elsif (unsigned(Hcount) >= P2_X_START AND unsigned(Hcount) <= P2_X_END) then
-				temp := (unsigned(Hcount) - P2_X_START)/2;
+				temp := (unsigned(Hcount) - P2_X_START);
 				PS_en <="10";
 			else 
 				temp := (others => '0');
