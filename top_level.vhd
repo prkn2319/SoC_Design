@@ -30,8 +30,8 @@ architecture arch of top_level is
     signal right_pad : std_logic_vector(WIDTH-1 downto 0);
     signal h_count : std_logic_vector(WIDTH-1 downto 0);
     signal v_count : std_logic_vector(WIDTH-1 downto 0);
-    signal score1 : integer;
-    signal score2 : integer;
+    signal score1 : std_logic_vector(3 downto 0);
+    signal score2 : std_logic_vector(3 downto 0);
 
 begin
 

@@ -17,8 +17,8 @@ entity image_generator is
 		ball_y    : in std_logic_vector(WIDTH-1 downto 0);
 		left_pad  : in std_logic_vector(WIDTH-1 downto 0);
 		right_pad : in std_logic_vector(WIDTH-1 downto 0);
-		score1    : in integer;
-		score2	  : in integer;
+		score1    : in std_logic_vector(3 downto 0);
+		score2	  : in std_logic_vector(3 downto 0);
 		
 		red, green, blue : out std_logic_vector(3 downto 0));
 end image_generator;

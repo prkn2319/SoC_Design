@@ -20,8 +20,8 @@ entity game_controller is
         ball_y    : out std_logic_vector(WIDTH-1 downto 0);
         left_pad  : out std_logic_vector(WIDTH-1 downto 0);
         right_pad : out std_logic_vector(WIDTH-1 downto 0);
-        score1 : out integer;
-        score2 : out integer
+        score1 : out std_logic_vector(3 downto 0);
+        score2 : out std_logic_vector(3 downto 0)
     );
 end game_controller;
 
@@ -35,8 +35,8 @@ architecture arch of game_controller is
     signal ball_yvect : signed(WIDTH-1 downto 0);
     signal left_pad_pos : unsigned(WIDTH-1 downto 0);
     signal right_pad_pos : unsigned(WIDTH-1 downto 0);
-    signal score1_sig : integer;
-    signal score2_sig : integer;
+    signal score1_sig : unsigned(3 downto 0);
+    signal score2_sig : unsigned(3 downto 0);
 
 begin
 
@@ -46,10 +46,10 @@ begin
         if (rst = '1' OR game_reset <= '1') then
             
             game_reset <= '0';
-            score1_sig <= 0;
-            score2_sig <= 0;
-            score1 <= 0;
-            score2 <= 0;
+            score1_sig <= (others => '0');
+            score2_sig <= (others => '0');
+            score1 <= (others => '0');
+            score2 <= (others => '0');
             ball_xpos <= "0101000000";
             ball_ypos <= "0011110000";
             ball_yvect <= (others => '0');
@@ -117,11 +117,11 @@ begin
             -- ball hits side, game resets
             elsif (ball_xpos = 0) then
                 game_reset <= '1';
-                score2_sig <= score2_sig + 1;
+                --score2_sig <= score2_sig + 1;
                 direction_right <= '1';
             elsif (ball_xpos = 639) then
                 game_reset <= '1';
-                score1_sig <= score1_sig + 1;
+                --score1_sig <= score1_sig + 1;
                 direction_right <= '0';
             end if;
 
@@ -137,8 +137,8 @@ begin
             ball_y <= std_logic_vector(signed(ball_ypos) + ball_yvect);
             left_pad <= std_logic_vector(left_pad_pos);
             right_pad <= std_logic_vector(right_pad_pos);
-            score1 <= score1_sig;
-            score2 <= score2_sig;
+            score1 <= std_logic_vector(score1_sig);
+            score2 <= std_logic_vector(score2_sig);
 
 
         end if;
