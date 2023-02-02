@@ -22,6 +22,7 @@ end top_level;
 architecture arch of top_level is
 
     signal pixel_clk : std_logic;
+    signal game_clk : std_logic;
     signal disp_en : std_logic;
     signal ball_x : std_logic_vector(WIDTH-1 downto 0);
     signal ball_y : std_logic_vector(WIDTH-1 downto 0);
@@ -34,7 +35,17 @@ architecture arch of top_level is
 
 begin
 
-    U_PLL : entity work.PLL
+    U_PLL_GAME : entity work.PLL
+        generic map (
+            clk_in_freq  => 100000000,
+            clk_out_freq => 60)
+        port map (
+            clk_in => clk,
+            clk_out => game_clk,
+            rst => rst
+        );
+
+    U_PLL_VGA : entity work.PLL
         generic map (
             clk_in_freq  => 100000000,
             clk_out_freq => 25000000)
@@ -59,7 +70,7 @@ begin
         generic map (WIDTH => 10)
         port map (
             rst => rst,
-            clk => clk,
+            clk => game_clk,
             in1 => in1,
             in2 => in2,
             in3 => in3,  
@@ -75,7 +86,7 @@ begin
     U_IMAGE_GENERATOR : entity work.image_generator
         generic map (WIDTH => 10)
         port map (
-            clk => clk,
+            clk => pixel_clk,
             h_count => h_count,
             v_count => v_count,
             vid_en => disp_en,
