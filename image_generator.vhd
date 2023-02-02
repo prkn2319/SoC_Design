@@ -130,14 +130,14 @@ begin
 			--score
 			if (Score_en = '1' and PS_en = "01") then
 				--display p2 score from rom
-				red   <= rgb_scores(score1)(11 downto 8);
-				green <= rgb_scores(score1)(7  downto 4);
-				blue  <= rgb_scores(score1)(3  downto 0);
+				red   <= rgb_scores(to_integer(unsigned(score1)))(11 downto 8);
+				green <= rgb_scores(to_integer(unsigned(score1)))(7  downto 4);
+				blue  <= rgb_scores(to_integer(unsigned(score1)))(3  downto 0);
 			elsif (Score_en = '1' and PS_en = "10") then
 				--display p2 score from rom
-				red   <= rgb_scores(score2)(11 downto 8);
-				green <= rgb_scores(score2)(7  downto 4);
-				blue  <= rgb_scores(score2)(3  downto 0);
+				red   <= rgb_scores(to_integer(unsigned(score2)))(11 downto 8);
+				green <= rgb_scores(to_integer(unsigned(score2)))(7  downto 4);
+				blue  <= rgb_scores(to_integer(unsigned(score2)))(3  downto 0);
 			end if;
 			
 			--ball

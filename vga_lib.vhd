@@ -33,13 +33,13 @@ package VGA_LIB is
   -----------------------------------------------------------------------------
   -- CONSTANTS DEFINING PIXEL BOUNDARIES OF THE IMAGE FOR EACH IMAGE LOCATION
   
-  constant P1_X_START : integer := 159;
-  constant P1_X_END   : integer := 223;
+  constant P1_X_START : integer := 175;
+  constant P1_X_END   : integer := 207;
   constant P1_Y_START : integer := 15;
   constant P1_Y_END   : integer := 47;
 
-  constant P2_X_START : integer := 409;
-  constant P2_X_END   : integer := 473;
+  constant P2_X_START : integer := 425;
+  constant P2_X_END   : integer := 457;
   constant P2_Y_START : integer := 15;
   constant P2_Y_END   : integer := 47;
 
