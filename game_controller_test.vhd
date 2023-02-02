@@ -7,7 +7,7 @@ use ieee.numeric_std.all;
 --paddles 50 pixels long, 5 10 pixel strike segments
 --ball constant x velocity of 10 pixels
 
-entity game_controller is 
+entity game_controller_test is 
     generic (WIDTH : positive := 10);
     port (
         rst : in std_logic;
@@ -23,10 +23,10 @@ entity game_controller is
         score1 : out std_logic_vector(3 downto 0);
         score2 : out std_logic_vector(3 downto 0)
     );
-end game_controller;
+end game_controller_test;
 
 
-architecture arch of game_controller is 
+architecture arch of game_controller_test is 
 
     signal game_reset : std_logic;
     signal direction_right : std_logic;
