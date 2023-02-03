@@ -40,20 +40,32 @@ architecture arch of game_controller_test is
 
 begin
 
-    process (rst, clk)
+    process (rst, game_reset, clk)
     begin 
 
-        if (rst = '1' OR game_reset = '1') then
+        if (rst = '1') then
             
             game_reset <= '0';
             direction_right <= '0';
             ball_xpos <= "0101000000";
             ball_ypos <= "0011110000";
             ball_yvect <= (others => '0');
-            left_pad_pos  <= "0000001010";
-            right_pad_pos <= "0000001010";
+            left_pad_pos  <= "0011110000";
+            right_pad_pos <= "0011110000";
             score1_sig <= x"0";
             score2_sig <= x"0";
+			
+		elsif (game_reset = '1') then
+			
+			game_reset <= '0';
+            --direction_right <= '0';
+            ball_xpos <= "0101000000";
+            ball_ypos <= "0011110000";
+            ball_yvect <= (others => '0');
+            --left_pad_pos  <= "0000001010";
+            --right_pad_pos <= "0000001010";
+            --score1_sig <= x"0";
+            --score2_sig <= x"0";
         
         elsif (rising_edge(clk)) then
             
@@ -72,7 +84,7 @@ begin
             end if;
             
             -- GAME LOGIC
-            if (direction_right = '0' AND (ball_xpos) = 20) then
+            if (direction_right = '0' AND (ball_xpos) <= 20) then
                 --ball contacts
                 direction_right <= '1';
                 if (ball_ypos >= left_pad_pos AND ball_ypos < left_pad_pos + 10) then
@@ -87,9 +99,11 @@ begin
                     ball_yvect <= to_signed(10, WIDTH);
                 --ball misses
                 else
-                    direction_right <= '0';
+					score2_sig <= score2_sig + 1;
+					direction_right <= '1';
+					game_reset <= '1';
                 end if;
-            elsif (direction_right = '1' AND (ball_xpos) = 620) then
+            elsif (direction_right = '1' AND (ball_xpos) >= 620) then
                 --ball contacts
                 direction_right <= '0';
                 if (ball_ypos >= right_pad_pos AND ball_ypos < right_pad_pos + 10) then
@@ -104,20 +118,26 @@ begin
                     ball_yvect <= to_signed(10, WIDTH);
                 --ball misses
                 else
-                    direction_right <= '1';
+					score1_sig <= score1_sig + 1;
+					direction_right <= '0';
+					game_reset <= '1';
                 end if;
             -- ball hits ceiling or floor
-            elsif (ball_ypos = 0 OR ball_ypos >= 464) then
-                ball_yvect <= -ball_yvect;
+            elsif (ball_ypos <= 5) then
+                ball_yvect(WIDTH-1) <= '1';
+			elsif (ball_ypos >= 464) then
+				ball_yvect(WIDTH-1) <= '0';
             -- ball hits side, game resets
-            elsif (ball_xpos <= 10) then
-                game_reset <= '1';
-                score2_sig <= score2_sig + 1;
-                direction_right <= '1';
-            elsif (ball_xpos >= 629) then
-                game_reset <= '1';
-                score1_sig <= score1_sig + 1;
-                direction_right <= '0';
+--            elsif (ball_xpos <= 10) then
+--                
+--                score1_sig <= score1_sig + 1;
+--                direction_right <= '0';
+--				game_reset <= '1';
+--            elsif (ball_xpos >= 629) then
+                
+--                score2_sig <= score2_sig + 1;
+--                direction_right <= '1';
+--				game_reset <= '1';
             end if;
 
             --CALCULATE X and Y
