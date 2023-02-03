@@ -123,7 +123,7 @@ begin
 					game_reset <= '1';
                 end if;
             -- ball hits ceiling or floor
-            elsif (ball_ypos <= 10 and ball_yvect < 0) then
+            elsif (ball_ypos <= 12 and ball_yvect < 0) then
                 ball_yvect <= -ball_yvect;
             elsif (ball_ypos >= 464 and ball_yvect > 0) then
                 ball_yvect <= -ball_yvect;
