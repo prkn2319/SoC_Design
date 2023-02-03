@@ -30,6 +30,7 @@ architecture arch of game_controller_test is
 
     signal game_reset : std_logic;
     signal direction_right : std_logic;
+	signal direction_down  : std_logic;
     signal ball_xpos : unsigned(WIDTH-1 downto 0);
     signal ball_ypos : unsigned(WIDTH-1 downto 0);
     signal ball_yvect : signed(WIDTH-1 downto 0);
@@ -47,11 +48,12 @@ begin
             
             game_reset <= '0';
             direction_right <= '0';
+			direction_down  <= '0';
             ball_xpos <= "0101000000";
             ball_ypos <= "0011110000";
             ball_yvect <= (others => '0');
-            left_pad_pos  <= "0011110000";
-            right_pad_pos <= "0011110000";
+            left_pad_pos  <= "0011101000";
+            right_pad_pos <= "0011101000";
             score1_sig <= x"0";
             score2_sig <= x"0";
 			
@@ -71,62 +73,60 @@ begin
             
             -- PADDLE LOGIC
             if (in1 = '1' AND (left_pad_pos) >= 10) then
-                left_pad_pos <= left_pad_pos - 10;
+                left_pad_pos <= left_pad_pos - 8;
             end if;
             if (in2 = '1' AND (left_pad_pos) <= 420) then
-                left_pad_pos <= left_pad_pos + 10;
+                left_pad_pos <= left_pad_pos + 8;
             end if;
             if (in3 = '1' AND (right_pad_pos) >= 10) then
-                right_pad_pos <= right_pad_pos - 10;
+                right_pad_pos <= right_pad_pos - 8;
             end if;
             if (in4 = '1' AND (right_pad_pos) <= 420) then
-                right_pad_pos <= right_pad_pos + 10;
+                right_pad_pos <= right_pad_pos + 8;
             end if;
             
             -- GAME LOGIC
-            if (direction_right = '0' AND (ball_xpos) <= 20) then
+            if (direction_right = '0' AND (ball_xpos) <= 12) then
                 --ball contacts
                 direction_right <= '1';
-                if (ball_ypos >= left_pad_pos AND ball_ypos < left_pad_pos + 10) then
-                    ball_yvect <= to_signed(-10, WIDTH);
-                elsif (ball_ypos >= left_pad_pos + 10 AND ball_ypos < left_pad_pos + 20) then
-                    ball_yvect <= to_signed(-5, WIDTH);
-                elsif (ball_ypos >= left_pad_pos + 20 AND ball_ypos < left_pad_pos + 30) then
+                if (ball_ypos >= left_pad_pos-5 AND ball_ypos < left_pad_pos + 6) then
+                    ball_yvect <= to_signed(-8, WIDTH);
+                elsif (ball_ypos >= left_pad_pos + 6 AND ball_ypos < left_pad_pos + 17) then
+                    ball_yvect <= to_signed(-4, WIDTH);
+                elsif (ball_ypos >= left_pad_pos + 17 AND ball_ypos < left_pad_pos + 28) then
                     ball_yvect <= to_signed(0, WIDTH);
-                elsif (ball_ypos >= left_pad_pos + 30 AND ball_ypos < left_pad_pos + 40) then
-                    ball_yvect <= to_signed(5, WIDTH);
+                elsif (ball_ypos >= left_pad_pos + 28 AND ball_ypos < left_pad_pos + 39) then
+                    ball_yvect <= to_signed(4, WIDTH);
                 elsif (ball_ypos >= left_pad_pos + 40 AND ball_ypos < left_pad_pos + 50) then
-                    ball_yvect <= to_signed(10, WIDTH);
+                    ball_yvect <= to_signed(8, WIDTH);
                 --ball misses
                 else
 					score2_sig <= score2_sig + 1;
-					direction_right <= '1';
 					game_reset <= '1';
                 end if;
             elsif (direction_right = '1' AND (ball_xpos) >= 620) then
                 --ball contacts
                 direction_right <= '0';
-                if (ball_ypos >= right_pad_pos AND ball_ypos < right_pad_pos + 10) then
-                    ball_yvect <= to_signed(-10, WIDTH);
-                elsif (ball_ypos >= right_pad_pos + 10 AND ball_ypos < right_pad_pos + 20) then
-                    ball_yvect <= to_signed(-5, WIDTH);
-                elsif (ball_ypos >= right_pad_pos + 20 AND ball_ypos < right_pad_pos + 30) then
+                if (ball_ypos >= right_pad_pos-5 AND ball_ypos < right_pad_pos + 6) then
+                    ball_yvect <= to_signed(-8, WIDTH);
+                elsif (ball_ypos >= right_pad_pos + 6 AND ball_ypos < right_pad_pos + 17) then
+                    ball_yvect <= to_signed(-4, WIDTH);
+                elsif (ball_ypos >= right_pad_pos + 17 AND ball_ypos < right_pad_pos + 28) then
                     ball_yvect <= to_signed(0, WIDTH);
-                elsif (ball_ypos >= right_pad_pos + 30 AND ball_ypos < right_pad_pos + 40) then
-                    ball_yvect <= to_signed(5, WIDTH);
-                elsif (ball_ypos >= right_pad_pos + 40 AND ball_ypos < right_pad_pos + 50) then
-                    ball_yvect <= to_signed(10, WIDTH);
+                elsif (ball_ypos >= right_pad_pos + 28 AND ball_ypos < right_pad_pos + 39) then
+                    ball_yvect <= to_signed(4, WIDTH);
+                elsif (ball_ypos >= right_pad_pos + 39 AND ball_ypos < right_pad_pos + 50) then
+                    ball_yvect <= to_signed(8, WIDTH);
                 --ball misses
                 else
 					score1_sig <= score1_sig + 1;
-					direction_right <= '0';
 					game_reset <= '1';
                 end if;
             -- ball hits ceiling or floor
-            elsif (ball_ypos <= 5) then
-                ball_yvect(WIDTH-1) <= '1';
-			elsif (ball_ypos >= 464) then
-				ball_yvect(WIDTH-1) <= '0';
+            elsif (ball_ypos <= 10 and ball_yvect < 0) then
+                ball_yvect <= -ball_yvect;
+            elsif (ball_ypos >= 464 and ball_yvect > 0) then
+                ball_yvect <= -ball_yvect;
             -- ball hits side, game resets
 --            elsif (ball_xpos <= 10) then
 --                
@@ -142,9 +142,9 @@ begin
 
             --CALCULATE X and Y
             if (direction_right = '0') then
-                ball_xpos <= ball_xpos - 10;
+                ball_xpos <= ball_xpos - 8;
             else
-                ball_xpos <= ball_xpos + 10;
+                ball_xpos <= ball_xpos + 8;
             end if;
             ball_ypos <= unsigned(signed(ball_ypos) + ball_yvect);
 
