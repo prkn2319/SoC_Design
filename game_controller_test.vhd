@@ -52,8 +52,8 @@ begin
             ball_xpos <= "0101000000";
             ball_ypos <= "0011110000";
             ball_yvect <= (others => '0');
-            left_pad_pos  <= "0011101000";
-            right_pad_pos <= "0011101000";
+            left_pad_pos  <= "0011011100";
+            right_pad_pos <= "0011011100";
             score1_sig <= x"0";
             score2_sig <= x"0";
 			
