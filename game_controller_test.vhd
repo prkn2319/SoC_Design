@@ -43,7 +43,7 @@ begin
     process (rst, clk)
     begin 
 
-        if (rst = '1' OR game_reset <= '1') then
+        if (rst = '1' OR game_reset = '1') then
             
             game_reset <= '0';
             direction_right <= '0';
@@ -52,8 +52,8 @@ begin
             ball_yvect <= (others => '0');
             left_pad_pos  <= "0000001010";
             right_pad_pos <= "0000001010";
-            score1_sig <= x"1";
-            score2_sig <= x"2";
+            score1_sig <= x"0";
+            score2_sig <= x"0";
         
         elsif (rising_edge(clk)) then
             
@@ -131,6 +131,7 @@ begin
 
         end if;
     end process;
+	
 
        -- ASSIGN OUTPUT (may need to make outputs combinational to avoid clock cycle delay)
         ball_x <= std_logic_vector(ball_xpos);

@@ -35,7 +35,7 @@ architecture BHV of image_generator is
 	signal ball_en : std_logic;
 	
 	--rgb values
-	type   scores_t is array(0 to 9) of std_logic_vector(11 downto 0); 
+	type   scores_t is array(0 to 15) of std_logic_vector(11 downto 0); 
 	signal rgb_scores : scores_t;
 	signal rgb_ball : std_logic_vector(11 downto 0);
 
@@ -117,6 +117,36 @@ begin
 		clka => clk,
 		addra => score_rom_addr,
 		douta => rgb_scores(9));
+		
+	U_ROM_SCRA : entity work.img_rom_32bit_A port map (
+		clka => clk,
+		addra => score_rom_addr,
+		douta => rgb_scores(10));
+		
+	U_ROM_SCRB : entity work.img_rom_32bit_B port map (
+		clka => clk,
+		addra => score_rom_addr,
+		douta => rgb_scores(11));
+		
+	U_ROM_SCRC : entity work.img_rom_32bit_C port map (
+		clka => clk,
+		addra => score_rom_addr,
+		douta => rgb_scores(12));
+		
+	U_ROM_SCRD : entity work.img_rom_32bit_D port map (
+		clka => clk,
+		addra => score_rom_addr,
+		douta => rgb_scores(13));
+		
+	U_ROM_SCRE : entity work.img_rom_32bit_E port map (
+		clka => clk,
+		addra => score_rom_addr,
+		douta => rgb_scores(14));
+		
+	U_ROM_SCRF : entity work.img_rom_32bit_F port map (
+		clka => clk,
+		addra => score_rom_addr,
+		douta => rgb_scores(15));
 		
 	--main rgb assignment process
 	process(clk)
