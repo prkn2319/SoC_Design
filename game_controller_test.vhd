@@ -50,29 +50,29 @@ begin
             ball_xpos <= "0101000000";
             ball_ypos <= "0011110000";
             ball_yvect <= (others => '0');
-            left_pad_pos <= (others => '0');
-            right_pad_pos <= (others => '0');
-            score1_sig <= (others => '0');
-            score2_sig <= (others => '0');
+            left_pad_pos  <= "0000001010";
+            right_pad_pos <= "0000001010";
+            score1_sig <= x"1";
+            score2_sig <= x"2";
         
         elsif (rising_edge(clk)) then
             
             -- PADDLE LOGIC
-            if (in1 = '1' AND to_integer(left_pad_pos) >= 10) then
+            if (in1 = '1' AND (left_pad_pos) >= 10) then
                 left_pad_pos <= left_pad_pos - 10;
             end if;
-            if (in2 = '1' AND to_integer(left_pad_pos) <= 420) then
+            if (in2 = '1' AND (left_pad_pos) <= 420) then
                 left_pad_pos <= left_pad_pos + 10;
             end if;
-            if (in3 = '1' AND to_integer(right_pad_pos) >= 10) then
+            if (in3 = '1' AND (right_pad_pos) >= 10) then
                 right_pad_pos <= right_pad_pos - 10;
             end if;
-            if (in4 = '1' AND to_integer(right_pad_pos) <= 420) then
+            if (in4 = '1' AND (right_pad_pos) <= 420) then
                 right_pad_pos <= right_pad_pos + 10;
             end if;
             
             -- GAME LOGIC
-            if (direction_right = '0' AND to_integer(ball_xpos) = 20) then
+            if (direction_right = '0' AND (ball_xpos) = 20) then
                 --ball contacts
                 direction_right <= '1';
                 if (ball_ypos >= left_pad_pos AND ball_ypos < left_pad_pos + 10) then
@@ -89,7 +89,7 @@ begin
                 else
                     direction_right <= '0';
                 end if;
-            elsif (direction_right = '1' AND to_integer(ball_xpos) = 620) then
+            elsif (direction_right = '1' AND (ball_xpos) = 620) then
                 --ball contacts
                 direction_right <= '0';
                 if (ball_ypos >= right_pad_pos AND ball_ypos < right_pad_pos + 10) then
@@ -107,16 +107,16 @@ begin
                     direction_right <= '1';
                 end if;
             -- ball hits ceiling or floor
-            elsif (ball_ypos = 0 OR ball_ypos = 480) then
+            elsif (ball_ypos = 0 OR ball_ypos >= 464) then
                 ball_yvect <= -ball_yvect;
             -- ball hits side, game resets
-            elsif (ball_xpos = 0) then
+            elsif (ball_xpos <= 10) then
                 game_reset <= '1';
-                --score2_sig <= score2_sig + 1;
+                score2_sig <= score2_sig + 1;
                 direction_right <= '1';
-            elsif (ball_xpos = 639) then
+            elsif (ball_xpos >= 629) then
                 game_reset <= '1';
-                --score1_sig <= score1_sig + 1;
+                score1_sig <= score1_sig + 1;
                 direction_right <= '0';
             end if;
 
@@ -132,17 +132,13 @@ begin
         end if;
     end process;
 
-    process (direction_right, ball_xpos, ball_ypos, ball_yvect, left_pad_pos, right_pad_pos, score1_sig, score2_sig)
-    begin
-
        -- ASSIGN OUTPUT (may need to make outputs combinational to avoid clock cycle delay)
         ball_x <= std_logic_vector(ball_xpos);
-        ball_y <= std_logic_vector(signed(ball_ypos) + ball_yvect);
+        ball_y <= std_logic_vector(ball_ypos);
         left_pad <= std_logic_vector(left_pad_pos);
         right_pad <= std_logic_vector(right_pad_pos);
         score1 <= std_logic_vector(score1_sig);
         score2 <= std_logic_vector(score2_sig);
 
-    end process;
 
 end arch;
