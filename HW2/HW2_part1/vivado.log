@@ -1,0 +1,482 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Feb 23 13:28:11 2023
+# Process ID: 19248
+# Current directory: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11320 C:\Users\mvbos\Desktop\SoC\SoC_Design\HW2\HW2_part1\HW2_part1.xpr
+# Log file: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/vivado.log
+# Journal file: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1\vivado.jou
+# Running On: DESKTOP-5C5IMB2, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 4, Host memory: 12779 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:13 . Memory (MB): peak = 1168.207 ; gain = 286.812
+update_compile_order -fileset sources_1
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+copy_run -name impl_1_copy_1 [get_runs impl_1] -parent_run synth_1
+copy_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 1293.738 ; gain = 0.000
+impl_1_copy_1
+set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
+set_property dataflow_viewer_settings "min_width=16"   [current_fileset]
+open_bd_design {C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/sources_1/bd/hw2_part1/hw2_part1.bd}
+Reading block design file <C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/sources_1/bd/hw2_part1/hw2_part1.bd>...
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 'CLKOUT1_JITTER' value '130.958' for IP 'clk_wiz_0'.
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_100M
+Successfully read diagram <hw2_part1> from block design file <C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/sources_1/bd/hw2_part1/hw2_part1.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1419.605 ; gain = 114.609
+ERROR: [Common 17-39] 'open_bd_design' failed due to earlier errors.
+validate_bd_design
+ERROR: [BD 5-336] This command cannot be run, as the BD-design is locked. Locked reason(s):
+* Block design contains locked IPs. Please run report_ip_status for more details and recommendations on how to fix this issue. 
+List of locked IPs: 
+hw2_part1_clk_wiz_0_0
+hw2_part1_axi_uartlite_0_0
+hw2_part1_rst_clk_wiz_0_100M_0
+
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+report_ip_status
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Feb 23 13:30:58 2023
+| Host         : DESKTOP-5C5IMB2 running 64-bit major release  (build 9200)
+| Command      : report_ip_status
+------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 11 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++-------------------------------------+-----------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| Instance Name                       | Status          | Recommendation      | Change    | IP Name            | IP      | New Version    | New        | Original Part        |
+|                                     |                 |                     | Log       |                    | Version |                | License    |                      |
++-------------------------------------+-----------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_axi_uartlite_0_0          | IP board change | Retarget IP         |  *(1)     | AXI Uartlite       | 2.0     | 2.0 (Rev. 31)  | Included   | xc7a35tcpg236-1      |
+|                                     |                 |                     |           |                    | (Rev.   |                |            |                      |
+|                                     |                 |                     |           |                    | 31)     |                |            |                      |
++-------------------------------------+-----------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_clk_wiz_0_0               | IP board change | Retarget IP         |  *(2)     | Clocking Wizard    | 6.0     | 6.0 (Rev. 11)  | Included   | xc7a35tcpg236-1      |
+|                                     |                 |                     |           |                    | (Rev.   |                |            |                      |
+|                                     |                 |                     |           |                    | 11)     |                |            |                      |
++-------------------------------------+-----------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_dlmb_bram_if_cntlr_0      | Up-to-date      | No changes required |  *(3)     | LMB BRAM           | 4.0     | 4.0 (Rev. 21)  | Included   | xc7a35tcpg236-1      |
+|                                     |                 |                     |           | Controller         | (Rev.   |                |            |                      |
+|                                     |                 |                     |           |                    | 21)     |                |            |                      |
++-------------------------------------+-----------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_dlmb_v10_0                | Up-to-date      | No changes required |  *(4)     | Local Memory Bus   | 3.0     | 3.0 (Rev. 12)  | Included   | xc7a35tcpg236-1      |
+|                                     |                 |                     |           | (LMB) 1.0          | (Rev.   |                |            |                      |
+|                                     |                 |                     |           |                    | 12)     |                |            |                      |
++-------------------------------------+-----------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_ilmb_bram_if_cntlr_0      | Up-to-date      | No changes required |  *(5)     | LMB BRAM           | 4.0     | 4.0 (Rev. 21)  | Included   | xc7a35tcpg236-1      |
+|                                     |                 |                     |           | Controller         | (Rev.   |                |            |                      |
+|                                     |                 |                     |           |                    | 21)     |                |            |                      |
++-------------------------------------+-----------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_ilmb_v10_0                | Up-to-date      | No changes required |  *(6)     | Local Memory Bus   | 3.0     | 3.0 (Rev. 12)  | Included   | xc7a35tcpg236-1      |
+|                                     |                 |                     |           | (LMB) 1.0          | (Rev.   |                |            |                      |
+|                                     |                 |                     |           |                    | 12)     |                |            |                      |
++-------------------------------------+-----------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_lmb_bram_0                | Up-to-date      | No changes required |  *(7)     | Block Memory       | 8.4     | 8.4 (Rev. 5)   | Included   | xc7a35tcpg236-1      |
+|                                     |                 |                     |           | Generator          | (Rev.   |                |            |                      |
+|                                     |                 |                     |           |                    | 5)      |                |            |                      |
++-------------------------------------+-----------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_mdm_1_0                   | Up-to-date      | No changes required |  *(8)     | MicroBlaze Debug   | 3.2     | 3.2 (Rev. 23)  | Included   | xc7a35tcpg236-1      |
+|                                     |                 |                     |           | Module (MDM)       | (Rev.   |                |            |                      |
+|                                     |                 |                     |           |                    | 23)     |                |            |                      |
++-------------------------------------+-----------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_microblaze_0_0            | Up-to-date      | No changes required |  *(9)     | MicroBlaze         | 11.0    | 11.0 (Rev. 10) | Included   | xc7a35tcpg236-1      |
+|                                     |                 |                     |           |                    | (Rev.   |                |            |                      |
+|                                     |                 |                     |           |                    | 10)     |                |            |                      |
++-------------------------------------+-----------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_microblaze_0_axi_periph_0 | Up-to-date      | No changes required |  *(10)    | AXI Interconnect   | 2.1     | 2.1 (Rev. 28)  | Included   | xc7a35tcpg236-1      |
+|                                     |                 |                     |           |                    | (Rev.   |                |            |                      |
+|                                     |                 |                     |           |                    | 28)     |                |            |                      |
++-------------------------------------+-----------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_rst_clk_wiz_0_100M_0      | IP board change | Retarget IP         |  *(11)    | Processor System   | 5.0     | 5.0 (Rev. 13)  | Included   | xc7a35tcpg236-1      |
+|                                     |                 |                     |           | Reset              | (Rev.   |                |            |                      |
+|                                     |                 |                     |           |                    | 13)     |                |            |                      |
++-------------------------------------+-----------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+*(1) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_uartlite_v2_0/doc/axi_uartlite_v2_0_changelog.txt
+*(2) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/clk_wiz_v6_0/doc/clk_wiz_v6_0_changelog.txt
+*(3) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/lmb_bram_if_cntlr_v4_0/doc/lmb_bram_if_cntlr_v4_0_changelog.txt
+*(4) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/lmb_v10_v3_0/doc/lmb_v10_v3_0_changelog.txt
+*(5) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/lmb_bram_if_cntlr_v4_0/doc/lmb_bram_if_cntlr_v4_0_changelog.txt
+*(6) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/lmb_v10_v3_0/doc/lmb_v10_v3_0_changelog.txt
+*(7) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/blk_mem_gen_v8_4/doc/blk_mem_gen_v8_4_changelog.txt
+*(8) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/mdm_v3_2/doc/mdm_v3_2_changelog.txt
+*(9) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/microblaze_v11_0/doc/microblaze_v11_0_changelog.txt
+*(10) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(11) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+
+
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {hw2_part1_clk_wiz_0_0 hw2_part1_rst_clk_wiz_0_100M_0 hw2_part1_axi_uartlite_0_0}] -log ip_upgrade.log
+Upgrading 'C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/sources_1/bd/hw2_part1/hw2_part1.bd'
+INFO: [IP_Flow 19-3420] Updated hw2_part1_axi_uartlite_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated hw2_part1_clk_wiz_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated hw2_part1_rst_clk_wiz_0_100M_0 to use current project options
+Wrote  : <C:\Users\mvbos\Desktop\SoC\SoC_Design\HW2\HW2_part1\HW2_part1.srcs\sources_1\bd\hw2_part1\hw2_part1.bd> 
+Wrote  : <C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/sources_1/bd/hw2_part1/ui/bd_6241f382.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {hw2_part1_clk_wiz_0_0 hw2_part1_rst_clk_wiz_0_100M_0 hw2_part1_axi_uartlite_0_0}] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/sources_1/bd/hw2_part1/hw2_part1.bd]
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0_local_memory/dlmb_bram_if_cntlr/LMB_Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0_local_memory/dlmb_v10/LMB_Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0_local_memory/ilmb_bram_if_cntlr/LMB_Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0_local_memory/ilmb_v10/LMB_Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0/Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_uartlite_0/s_axi_aclk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /rst_clk_wiz_0_100M/slowest_sync_clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/sources_1/bd/hw2_part1/hw2_part1.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+startgroup
+set_property -dict [list \
+  CONFIG.CLKOUT1_JITTER {132.282} \
+  CONFIG.CLKOUT1_PHASE_ERROR {95.856} \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {83} \
+  CONFIG.MMCM_CLKFBOUT_MULT_F {10.375} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {12.500} \
+] [get_bd_cells clk_wiz_0]
+endgroup
+validate_bd_design
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+save_bd_design
+Wrote  : <C:\Users\mvbos\Desktop\SoC\SoC_Design\HW2\HW2_part1\HW2_part1.srcs\sources_1\bd\hw2_part1\hw2_part1.bd> 
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+INFO: [BD 41-1662] The design 'hw2_part1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+VHDL Output written to : c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd
+VHDL Output written to : c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/sim/hw2_part1.vhd
+VHDL Output written to : c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/hdl/hw2_part1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_axi_uartlite_0_0/hw2_part1_axi_uartlite_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+Exporting to file c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/hw_handoff/hw2_part1.hwh
+Generated Hardware Definition File c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.hwdef
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP hw2_part1_axi_uartlite_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP hw2_part1_clk_wiz_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP hw2_part1_dlmb_bram_if_cntlr_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP hw2_part1_dlmb_v10_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP hw2_part1_ilmb_bram_if_cntlr_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP hw2_part1_ilmb_v10_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP hw2_part1_lmb_bram_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP hw2_part1_mdm_1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP hw2_part1_microblaze_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP hw2_part1_rst_clk_wiz_0_100M_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hw2_part1_axi_uartlite_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hw2_part1_clk_wiz_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hw2_part1_dlmb_bram_if_cntlr_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hw2_part1_dlmb_v10_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hw2_part1_ilmb_bram_if_cntlr_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hw2_part1_ilmb_v10_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hw2_part1_lmb_bram_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hw2_part1_mdm_1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hw2_part1_microblaze_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hw2_part1_rst_clk_wiz_0_100M_0
+[Thu Feb 23 13:32:51 2023] Launched hw2_part1_dlmb_bram_if_cntlr_0_synth_1, hw2_part1_dlmb_v10_0_synth_1, hw2_part1_ilmb_bram_if_cntlr_0_synth_1, hw2_part1_ilmb_v10_0_synth_1, hw2_part1_lmb_bram_0_synth_1, hw2_part1_axi_uartlite_0_0_synth_1, hw2_part1_mdm_1_0_synth_1, hw2_part1_microblaze_0_0_synth_1, hw2_part1_clk_wiz_0_0_synth_1, hw2_part1_rst_clk_wiz_0_100M_0_synth_1...
+Run output will be captured here:
+hw2_part1_dlmb_bram_if_cntlr_0_synth_1: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/hw2_part1_dlmb_bram_if_cntlr_0_synth_1/runme.log
+hw2_part1_dlmb_v10_0_synth_1: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/hw2_part1_dlmb_v10_0_synth_1/runme.log
+hw2_part1_ilmb_bram_if_cntlr_0_synth_1: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/hw2_part1_ilmb_bram_if_cntlr_0_synth_1/runme.log
+hw2_part1_ilmb_v10_0_synth_1: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/hw2_part1_ilmb_v10_0_synth_1/runme.log
+hw2_part1_lmb_bram_0_synth_1: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/hw2_part1_lmb_bram_0_synth_1/runme.log
+hw2_part1_axi_uartlite_0_0_synth_1: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/hw2_part1_axi_uartlite_0_0_synth_1/runme.log
+hw2_part1_mdm_1_0_synth_1: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/hw2_part1_mdm_1_0_synth_1/runme.log
+hw2_part1_microblaze_0_0_synth_1: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/hw2_part1_microblaze_0_0_synth_1/runme.log
+hw2_part1_clk_wiz_0_0_synth_1: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/hw2_part1_clk_wiz_0_0_synth_1/runme.log
+hw2_part1_rst_clk_wiz_0_100M_0_synth_1: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/hw2_part1_rst_clk_wiz_0_100M_0_synth_1/runme.log
+[Thu Feb 23 13:32:52 2023] Launched synth_1...
+Run output will be captured here: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 1971.359 ; gain = 255.641
+launch_runs impl_1 -jobs 8
+[Thu Feb 23 13:38:27 2023] Launched impl_1...
+Run output will be captured here: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Feb 23 13:40:55 2023] Launched impl_1...
+Run output will be captured here: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/impl_1/runme.log
+launch_runs impl_1_copy_1 -jobs 8
+[Thu Feb 23 13:42:17 2023] Launched impl_1_copy_1...
+Run output will be captured here: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/impl_1_copy_1/runme.log
+launch_runs impl_1_copy_1 -to_step write_bitstream -jobs 8
+[Thu Feb 23 13:44:57 2023] Launched impl_1_copy_1...
+Run output will be captured here: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/impl_1_copy_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-19:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1993.598 ; gain = 6.266
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A336A
+open_hw_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 4168.418 ; gain = 2174.820
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_axi_uartlite_0_0/hw2_part1_axi_uartlite_0_0.dcp' for cell 'hw2_part1_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_clk_wiz_0_0/hw2_part1_clk_wiz_0_0.dcp' for cell 'hw2_part1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_mdm_1_0/hw2_part1_mdm_1_0.dcp' for cell 'hw2_part1_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_microblaze_0_0/hw2_part1_microblaze_0_0.dcp' for cell 'hw2_part1_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_rst_clk_wiz_0_100M_0/hw2_part1_rst_clk_wiz_0_100M_0.dcp' for cell 'hw2_part1_i/rst_clk_wiz_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_dlmb_bram_if_cntlr_0/hw2_part1_dlmb_bram_if_cntlr_0.dcp' for cell 'hw2_part1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_dlmb_v10_0/hw2_part1_dlmb_v10_0.dcp' for cell 'hw2_part1_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_ilmb_bram_if_cntlr_0/hw2_part1_ilmb_bram_if_cntlr_0.dcp' for cell 'hw2_part1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'open_run' was cancelled
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_axi_uartlite_0_0/hw2_part1_axi_uartlite_0_0.dcp' for cell 'hw2_part1_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_clk_wiz_0_0/hw2_part1_clk_wiz_0_0.dcp' for cell 'hw2_part1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_mdm_1_0/hw2_part1_mdm_1_0.dcp' for cell 'hw2_part1_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_microblaze_0_0/hw2_part1_microblaze_0_0.dcp' for cell 'hw2_part1_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_rst_clk_wiz_0_100M_0/hw2_part1_rst_clk_wiz_0_100M_0.dcp' for cell 'hw2_part1_i/rst_clk_wiz_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_dlmb_bram_if_cntlr_0/hw2_part1_dlmb_bram_if_cntlr_0.dcp' for cell 'hw2_part1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_dlmb_v10_0/hw2_part1_dlmb_v10_0.dcp' for cell 'hw2_part1_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_ilmb_bram_if_cntlr_0/hw2_part1_ilmb_bram_if_cntlr_0.dcp' for cell 'hw2_part1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_ilmb_v10_0/hw2_part1_ilmb_v10_0.dcp' for cell 'hw2_part1_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_lmb_bram_0/hw2_part1_lmb_bram_0.dcp' for cell 'hw2_part1_i/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.238 . Memory (MB): peak = 4295.184 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 248 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_axi_uartlite_0_0/hw2_part1_axi_uartlite_0_0_board.xdc] for cell 'hw2_part1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_axi_uartlite_0_0/hw2_part1_axi_uartlite_0_0_board.xdc] for cell 'hw2_part1_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_axi_uartlite_0_0/hw2_part1_axi_uartlite_0_0.xdc] for cell 'hw2_part1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_axi_uartlite_0_0/hw2_part1_axi_uartlite_0_0.xdc] for cell 'hw2_part1_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_clk_wiz_0_0/hw2_part1_clk_wiz_0_0_board.xdc] for cell 'hw2_part1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_clk_wiz_0_0/hw2_part1_clk_wiz_0_0_board.xdc] for cell 'hw2_part1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_clk_wiz_0_0/hw2_part1_clk_wiz_0_0.xdc] for cell 'hw2_part1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_clk_wiz_0_0/hw2_part1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_clk_wiz_0_0/hw2_part1_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_clk_wiz_0_0/hw2_part1_clk_wiz_0_0.xdc] for cell 'hw2_part1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_microblaze_0_0/hw2_part1_microblaze_0_0.xdc] for cell 'hw2_part1_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_microblaze_0_0/hw2_part1_microblaze_0_0.xdc] for cell 'hw2_part1_i/microblaze_0/U0'
+Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_rst_clk_wiz_0_100M_0/hw2_part1_rst_clk_wiz_0_100M_0_board.xdc] for cell 'hw2_part1_i/rst_clk_wiz_0_100M/U0'
+Finished Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_rst_clk_wiz_0_100M_0/hw2_part1_rst_clk_wiz_0_100M_0_board.xdc] for cell 'hw2_part1_i/rst_clk_wiz_0_100M/U0'
+Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_rst_clk_wiz_0_100M_0/hw2_part1_rst_clk_wiz_0_100M_0.xdc] for cell 'hw2_part1_i/rst_clk_wiz_0_100M/U0'
+Finished Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_rst_clk_wiz_0_100M_0/hw2_part1_rst_clk_wiz_0_100M_0.xdc] for cell 'hw2_part1_i/rst_clk_wiz_0_100M/U0'
+Parsing XDC File [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/constrs_1/new/constraints.xdc]
+Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_mdm_1_0/hw2_part1_mdm_1_0.xdc] for cell 'hw2_part1_i/mdm_1/U0'
+Finished Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_mdm_1_0/hw2_part1_mdm_1_0.xdc] for cell 'hw2_part1_i/mdm_1/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'hw2_part1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 4979.406 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 96 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 4979.406 ; gain = 735.863
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Feb 23 13:48:10 2023] Launched impl_1...
+Run output will be captured here: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/impl_1/runme.log
+open_bd_design {C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/sources_1/bd/hw2_part1/hw2_part1.bd}
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.242 . Memory (MB): peak = 5007.582 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 247 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.482 . Memory (MB): peak = 5206.188 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.483 . Memory (MB): peak = 5206.188 ; gain = 0.000
+Generating merged BMM file for the design top 'hw2_part1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 5206.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 96 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 79 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+  SRLC16E => SRL16E: 1 instance 
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 5267.965 ; gain = 260.383
+startgroup
+place_ports sys_clock W5
+set_property is_loc_fixed true [get_ports [list  sys_clock]]
+endgroup
+startgroup
+place_ports reset U18
+set_property is_loc_fixed true [get_ports [list  reset]]
+endgroup
+startgroup
+place_ports usb_uart_rxd B18
+set_property is_loc_fixed true [get_ports [list  usb_uart_rxd]]
+endgroup
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Feb 23 14:05:02 2023] Launched impl_1...
+Run output will be captured here: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Feb 23 14:09:14 2023] Launched impl_1...
+Run output will be captured here: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/impl_1/runme.log
+open_bd_design {C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/sources_1/bd/hw2_part1/hw2_part1.bd}
+validate_bd_design -force
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+current_design synth_1
+save_bd_design
+Wrote  : <C:\Users\mvbos\Desktop\SoC\SoC_Design\HW2\HW2_part1\HW2_part1.srcs\sources_1\bd\hw2_part1\hw2_part1.bd> 
+Wrote  : <C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/sources_1/bd/hw2_part1/ui/bd_6241f382.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+INFO: [BD 41-1662] The design 'hw2_part1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+VHDL Output written to : c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd
+VHDL Output written to : c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/sim/hw2_part1.vhd
+VHDL Output written to : c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/hdl/hw2_part1_wrapper.vhd
+Exporting to file c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/hw_handoff/hw2_part1.hwh
+Generated Hardware Definition File c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.hwdef
+[Thu Feb 23 14:18:49 2023] Launched synth_1...
+Run output will be captured here: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 5337.656 ; gain = 0.000
+launch_runs impl_1 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Feb 23 14:20:30 2023] Launched impl_1...
+Run output will be captured here: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Feb 23 14:22:49 2023] Launched impl_1...
+Run output will be captured here: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 23 14:25:15 2023...

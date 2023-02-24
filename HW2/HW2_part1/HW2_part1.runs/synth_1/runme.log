@@ -1,0 +1,304 @@
+
+*** Running vivado
+    with args -log hw2_part1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hw2_part1_wrapper.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source hw2_part1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 411.398 ; gain = 80.387
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2022.2/data/ip'.
+Command: synth_design -top hw2_part1_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19780
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1243.105 ; gain = 406.516
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'hw2_part1_wrapper' [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/hdl/hw2_part1_wrapper.vhd:23]
+INFO: [Synth 8-3491] module 'hw2_part1' declared at 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:842' bound to instance 'hw2_part1_i' of component 'hw2_part1' [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/hdl/hw2_part1_wrapper.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'hw2_part1' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:855]
+INFO: [Synth 8-3491] module 'hw2_part1_axi_uartlite_0_0' declared at 'C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'hw2_part1_axi_uartlite_0_0' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:1069]
+INFO: [Synth 8-638] synthesizing module 'hw2_part1_axi_uartlite_0_0' [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'hw2_part1_clk_wiz_0_0' declared at 'C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'hw2_part1_clk_wiz_0_0' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:1094]
+INFO: [Synth 8-638] synthesizing module 'hw2_part1_clk_wiz_0_0' [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_clk_wiz_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'hw2_part1_mdm_1_0' declared at 'C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'hw2_part1_mdm_1_0' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:1101]
+INFO: [Synth 8-638] synthesizing module 'hw2_part1_mdm_1_0' [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_mdm_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'hw2_part1_microblaze_0_0' declared at 'C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'hw2_part1_microblaze_0_0' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:1114]
+INFO: [Synth 8-638] synthesizing module 'hw2_part1_microblaze_0_0' [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_microblaze_0_0_stub.vhdl:63]
+INFO: [Synth 8-638] synthesizing module 'hw2_part1_microblaze_0_axi_periph_0' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:718]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1ABT3HJ' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:615]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1ABT3HJ' (0#1) [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:615]
+INFO: [Synth 8-256] done synthesizing module 'hw2_part1_microblaze_0_axi_periph_0' (0#1) [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:718]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_M464CZ' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:40]
+INFO: [Synth 8-3491] module 'hw2_part1_dlmb_bram_if_cntlr_0' declared at 'C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'hw2_part1_dlmb_bram_if_cntlr_0' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:254]
+INFO: [Synth 8-638] synthesizing module 'hw2_part1_dlmb_bram_if_cntlr_0' [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'hw2_part1_dlmb_v10_0' declared at 'C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'hw2_part1_dlmb_v10_0' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:308]
+INFO: [Synth 8-638] synthesizing module 'hw2_part1_dlmb_v10_0' [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'hw2_part1_ilmb_bram_if_cntlr_0' declared at 'C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'hw2_part1_ilmb_bram_if_cntlr_0' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:336]
+INFO: [Synth 8-638] synthesizing module 'hw2_part1_ilmb_bram_if_cntlr_0' [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'hw2_part1_ilmb_v10_0' declared at 'C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'hw2_part1_ilmb_v10_0' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:390]
+INFO: [Synth 8-638] synthesizing module 'hw2_part1_ilmb_v10_0' [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'hw2_part1_lmb_bram_0' declared at 'C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'hw2_part1_lmb_bram_0' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:418]
+INFO: [Synth 8-638] synthesizing module 'hw2_part1_lmb_bram_0' [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_lmb_bram_0_stub.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_M464CZ' (0#1) [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:40]
+INFO: [Synth 8-3491] module 'hw2_part1_rst_clk_wiz_0_100M_0' declared at 'C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_rst_clk_wiz_0_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_0_100M' of component 'hw2_part1_rst_clk_wiz_0_100M_0' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:1236]
+INFO: [Synth 8-638] synthesizing module 'hw2_part1_rst_clk_wiz_0_100M_0' [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/.Xil/Vivado-13496-DESKTOP-5C5IMB2/realtime/hw2_part1_rst_clk_wiz_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'hw2_part1' (0#1) [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/synth/hw2_part1.vhd:855]
+INFO: [Synth 8-256] done synthesizing module 'hw2_part1_wrapper' (0#1) [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/hdl/hw2_part1_wrapper.vhd:23]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1ABT3HJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1ABT3HJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_1ABT3HJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_1ABT3HJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module hw2_part1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module hw2_part1_microblaze_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1340.141 ; gain = 503.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1340.141 ; gain = 503.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1340.141 ; gain = 503.551
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1340.141 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_dlmb_bram_if_cntlr_0/hw2_part1_dlmb_bram_if_cntlr_0/hw2_part1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'hw2_part1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_dlmb_bram_if_cntlr_0/hw2_part1_dlmb_bram_if_cntlr_0/hw2_part1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'hw2_part1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_dlmb_v10_0/hw2_part1_dlmb_v10_0/hw2_part1_dlmb_v10_0_in_context.xdc] for cell 'hw2_part1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_dlmb_v10_0/hw2_part1_dlmb_v10_0/hw2_part1_dlmb_v10_0_in_context.xdc] for cell 'hw2_part1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_ilmb_bram_if_cntlr_0/hw2_part1_ilmb_bram_if_cntlr_0/hw2_part1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'hw2_part1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_ilmb_bram_if_cntlr_0/hw2_part1_ilmb_bram_if_cntlr_0/hw2_part1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'hw2_part1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_ilmb_v10_0/hw2_part1_ilmb_v10_0/hw2_part1_dlmb_v10_0_in_context.xdc] for cell 'hw2_part1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_ilmb_v10_0/hw2_part1_ilmb_v10_0/hw2_part1_dlmb_v10_0_in_context.xdc] for cell 'hw2_part1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_lmb_bram_0/hw2_part1_lmb_bram_0/hw2_part1_lmb_bram_0_in_context.xdc] for cell 'hw2_part1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_lmb_bram_0/hw2_part1_lmb_bram_0/hw2_part1_lmb_bram_0_in_context.xdc] for cell 'hw2_part1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_mdm_1_0/hw2_part1_mdm_1_0/hw2_part1_mdm_1_0_in_context.xdc] for cell 'hw2_part1_i/mdm_1'
+Finished Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_mdm_1_0/hw2_part1_mdm_1_0/hw2_part1_mdm_1_0_in_context.xdc] for cell 'hw2_part1_i/mdm_1'
+Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_microblaze_0_0/hw2_part1_microblaze_0_0/hw2_part1_microblaze_0_0_in_context.xdc] for cell 'hw2_part1_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_microblaze_0_0/hw2_part1_microblaze_0_0/hw2_part1_microblaze_0_0_in_context.xdc] for cell 'hw2_part1_i/microblaze_0'
+Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_axi_uartlite_0_0/hw2_part1_axi_uartlite_0_0/hw2_part1_axi_uartlite_0_0_in_context.xdc] for cell 'hw2_part1_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_axi_uartlite_0_0/hw2_part1_axi_uartlite_0_0/hw2_part1_axi_uartlite_0_0_in_context.xdc] for cell 'hw2_part1_i/axi_uartlite_0'
+Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_clk_wiz_0_0/hw2_part1_clk_wiz_0_0/hw2_part1_clk_wiz_0_0_in_context.xdc] for cell 'hw2_part1_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_clk_wiz_0_0/hw2_part1_clk_wiz_0_0/hw2_part1_clk_wiz_0_0_in_context.xdc] for cell 'hw2_part1_i/clk_wiz_0'
+Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_rst_clk_wiz_0_100M_0/hw2_part1_rst_clk_wiz_0_100M_0/hw2_part1_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'hw2_part1_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_rst_clk_wiz_0_100M_0/hw2_part1_rst_clk_wiz_0_100M_0/hw2_part1_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'hw2_part1_i/rst_clk_wiz_0_100M'
+Parsing XDC File [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hw2_part1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/hw2_part1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1361.020 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1361.020 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'hw2_part1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '12.048', this can lead to different synthesis results.
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1361.020 ; gain = 524.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1361.020 ; gain = 524.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_clk_wiz_0_0/hw2_part1_clk_wiz_0_0/hw2_part1_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_clk_wiz_0_0/hw2_part1_clk_wiz_0_0/hw2_part1_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for hw2_part1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hw2_part1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hw2_part1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hw2_part1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hw2_part1_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hw2_part1_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hw2_part1_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hw2_part1_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hw2_part1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hw2_part1_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hw2_part1_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hw2_part1_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1361.020 ; gain = 524.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1361.020 ; gain = 524.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port ACLK in module hw2_part1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module hw2_part1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module hw2_part1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module hw2_part1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module hw2_part1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module hw2_part1_microblaze_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1361.020 ; gain = 524.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1361.020 ; gain = 524.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1361.020 ; gain = 524.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1361.020 ; gain = 524.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1361.020 ; gain = 524.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1361.020 ; gain = 524.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1361.020 ; gain = 524.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1361.020 ; gain = 524.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1361.020 ; gain = 524.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1361.020 ; gain = 524.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |hw2_part1_axi_uartlite_0_0     |         1|
+|2     |hw2_part1_clk_wiz_0_0          |         1|
+|3     |hw2_part1_mdm_1_0              |         1|
+|4     |hw2_part1_microblaze_0_0       |         1|
+|5     |hw2_part1_rst_clk_wiz_0_100M_0 |         1|
+|6     |hw2_part1_dlmb_bram_if_cntlr_0 |         1|
+|7     |hw2_part1_dlmb_v10_0           |         1|
+|8     |hw2_part1_ilmb_bram_if_cntlr_0 |         1|
+|9     |hw2_part1_ilmb_v10_0           |         1|
+|10    |hw2_part1_lmb_bram_0           |         1|
++------+-------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------------+------+
+|      |Cell                                |Count |
++------+------------------------------------+------+
+|1     |hw2_part1_axi_uartlite_0_0_bbox     |     1|
+|2     |hw2_part1_clk_wiz_0_0_bbox          |     1|
+|3     |hw2_part1_dlmb_bram_if_cntlr_0_bbox |     1|
+|4     |hw2_part1_dlmb_v10_0_bbox           |     1|
+|5     |hw2_part1_ilmb_bram_if_cntlr_0_bbox |     1|
+|6     |hw2_part1_ilmb_v10_0_bbox           |     1|
+|7     |hw2_part1_lmb_bram_0_bbox           |     1|
+|8     |hw2_part1_mdm_1_0_bbox              |     1|
+|9     |hw2_part1_microblaze_0_0_bbox       |     1|
+|10    |hw2_part1_rst_clk_wiz_0_100M_0_bbox |     1|
+|11    |IBUF                                |     2|
+|12    |OBUF                                |     1|
++------+------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1361.020 ; gain = 524.430
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 1361.020 ; gain = 503.551
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1361.020 ; gain = 524.430
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1363.273 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1369.914 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 7f2d93a8
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1369.914 ; gain = 929.527
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.runs/synth_1/hw2_part1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file hw2_part1_wrapper_utilization_synth.rpt -pb hw2_part1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 23 14:19:59 2023...

@@ -1,0 +1,272 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Feb 23 13:07:17 2023
+# Process ID: 1816
+# Current directory: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11464 C:\Users\mvbos\Desktop\SoC\SoC_Design\HW2\HW2_part1\HW2_part1.xpr
+# Log file: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/vivado.log
+# Journal file: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1\vivado.jou
+# Running On: DESKTOP-5C5IMB2, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 4, Host memory: 12779 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [BD 41-2576] File 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_clk_wiz_0_0/hw2_part1_clk_wiz_0_0.xci' referenced by design 'hw2_part1' could not be found.
+WARNING: [BD 41-2576] File 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_microblaze_0_0/hw2_part1_microblaze_0_0.xci' referenced by design 'hw2_part1' could not be found.
+WARNING: [BD 41-2576] File 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_dlmb_v10_0/hw2_part1_dlmb_v10_0.xci' referenced by design 'hw2_part1' could not be found.
+WARNING: [BD 41-2576] File 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_ilmb_v10_0/hw2_part1_ilmb_v10_0.xci' referenced by design 'hw2_part1' could not be found.
+WARNING: [BD 41-2576] File 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_dlmb_bram_if_cntlr_0/hw2_part1_dlmb_bram_if_cntlr_0.xci' referenced by design 'hw2_part1' could not be found.
+WARNING: [BD 41-2576] File 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_ilmb_bram_if_cntlr_0/hw2_part1_ilmb_bram_if_cntlr_0.xci' referenced by design 'hw2_part1' could not be found.
+WARNING: [BD 41-2576] File 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_lmb_bram_0/hw2_part1_lmb_bram_0.xci' referenced by design 'hw2_part1' could not be found.
+WARNING: [BD 41-2576] File 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_mdm_1_0/hw2_part1_mdm_1_0.xci' referenced by design 'hw2_part1' could not be found.
+WARNING: [BD 41-2576] File 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_rst_clk_wiz_0_100M_0/hw2_part1_rst_clk_wiz_0_100M_0.xci' referenced by design 'hw2_part1' could not be found.
+WARNING: [BD 41-2576] File 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_axi_uartlite_0_0/hw2_part1_axi_uartlite_0_0.xci' referenced by design 'hw2_part1' could not be found.
+WARNING: [BD 41-2576] File 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.gen/sources_1/bd/hw2_part1/ip/hw2_part1_microblaze_0_axi_periph_0/hw2_part1_microblaze_0_axi_periph_0.xci' referenced by design 'hw2_part1' could not be found.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'hw2_part1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+hw2_part1_lmb_bram_0
+hw2_part1_clk_wiz_0_0
+hw2_part1_microblaze_0_0
+hw2_part1_rst_clk_wiz_0_100M_0
+hw2_part1_dlmb_v10_0
+hw2_part1_ilmb_v10_0
+hw2_part1_mdm_1_0
+hw2_part1_dlmb_bram_if_cntlr_0
+hw2_part1_ilmb_bram_if_cntlr_0
+hw2_part1_axi_uartlite_0_0
+hw2_part1_microblaze_0_axi_periph_0
+
+open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:15 . Memory (MB): peak = 1206.168 ; gain = 372.820
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/sources_1/bd/hw2_part1/hw2_part1.bd}
+Reading block design file <C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/sources_1/bd/hw2_part1/hw2_part1.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_100M
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Successfully read diagram <hw2_part1> from block design file <C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/sources_1/bd/hw2_part1/hw2_part1.bd>
+validate_bd_design
+ERROR: [BD 5-336] This command cannot be run, as the BD-design is locked. Locked reason(s):
+* Block design contains locked IPs. Please run report_ip_status for more details and recommendations on how to fix this issue. 
+List of locked IPs: 
+hw2_part1_lmb_bram_0
+hw2_part1_clk_wiz_0_0
+hw2_part1_microblaze_0_0
+hw2_part1_rst_clk_wiz_0_100M_0
+hw2_part1_dlmb_v10_0
+hw2_part1_ilmb_v10_0
+hw2_part1_mdm_1_0
+hw2_part1_dlmb_bram_if_cntlr_0
+hw2_part1_ilmb_bram_if_cntlr_0
+hw2_part1_axi_uartlite_0_0
+hw2_part1_microblaze_0_axi_periph_0
+
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+validate_bd_design
+ERROR: [BD 5-336] This command cannot be run, as the BD-design is locked. Locked reason(s):
+* Block design contains locked IPs. Please run report_ip_status for more details and recommendations on how to fix this issue. 
+List of locked IPs: 
+hw2_part1_lmb_bram_0
+hw2_part1_clk_wiz_0_0
+hw2_part1_microblaze_0_0
+hw2_part1_rst_clk_wiz_0_100M_0
+hw2_part1_dlmb_v10_0
+hw2_part1_ilmb_v10_0
+hw2_part1_mdm_1_0
+hw2_part1_dlmb_bram_if_cntlr_0
+hw2_part1_ilmb_bram_if_cntlr_0
+hw2_part1_axi_uartlite_0_0
+hw2_part1_microblaze_0_axi_periph_0
+
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+report_ip_status
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Feb 23 13:10:33 2023
+| Host         : DESKTOP-5C5IMB2 running 64-bit major release  (build 9200)
+| Command      : report_ip_status
+------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 11 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++-------------------------------------+-------------------------------------+----------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| Instance Name                       | Status                              | Recommendation | Change    | IP Name            | IP      | New Version    | New        | Original Part        |
+|                                     |                                     |                | Log       |                    | Version |                | License    |                      |
++-------------------------------------+-------------------------------------+----------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_axi_uartlite_0_0          | IP revision change. IP board change | Upgrade IP     |  *(1)     | AXI Uartlite       | 2.0     | 2.0 (Rev. 31)  | Included   | xc7a35tcpg236-1      |
+|                                     |                                     |                |           |                    | (Rev.   |                |            |                      |
+|                                     |                                     |                |           |                    | 25)     |                |            |                      |
++-------------------------------------+-------------------------------------+----------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_clk_wiz_0_0               | IP revision change. IP board change | Upgrade IP     |  *(2)     | Clocking Wizard    | 6.0     | 6.0 (Rev. 11)  | Included   | xc7a35tcpg236-1      |
+|                                     |                                     |                |           |                    | (Rev.   |                |            |                      |
+|                                     |                                     |                |           |                    | 5)      |                |            |                      |
++-------------------------------------+-------------------------------------+----------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_dlmb_bram_if_cntlr_0      | IP revision change                  | Upgrade IP     |  *(3)     | LMB BRAM           | 4.0     | 4.0 (Rev. 21)  | Included   | xc7a35tcpg236-1      |
+|                                     |                                     |                |           | Controller         | (Rev.   |                |            |                      |
+|                                     |                                     |                |           |                    | 18)     |                |            |                      |
++-------------------------------------+-------------------------------------+----------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_dlmb_v10_0                | IP revision change                  | Upgrade IP     |  *(4)     | Local Memory Bus   | 3.0     | 3.0 (Rev. 12)  | Included   | xc7a35tcpg236-1      |
+|                                     |                                     |                |           | (LMB) 1.0          | (Rev.   |                |            |                      |
+|                                     |                                     |                |           |                    | 11)     |                |            |                      |
++-------------------------------------+-------------------------------------+----------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_ilmb_bram_if_cntlr_0      | IP revision change                  | Upgrade IP     |  *(5)     | LMB BRAM           | 4.0     | 4.0 (Rev. 21)  | Included   | xc7a35tcpg236-1      |
+|                                     |                                     |                |           | Controller         | (Rev.   |                |            |                      |
+|                                     |                                     |                |           |                    | 18)     |                |            |                      |
++-------------------------------------+-------------------------------------+----------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_ilmb_v10_0                | IP revision change                  | Upgrade IP     |  *(6)     | Local Memory Bus   | 3.0     | 3.0 (Rev. 12)  | Included   | xc7a35tcpg236-1      |
+|                                     |                                     |                |           | (LMB) 1.0          | (Rev.   |                |            |                      |
+|                                     |                                     |                |           |                    | 11)     |                |            |                      |
++-------------------------------------+-------------------------------------+----------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_lmb_bram_0                | IP revision change                  | Upgrade IP     |  *(7)     | Block Memory       | 8.4     | 8.4 (Rev. 5)   | Included   | xc7a35tcpg236-1      |
+|                                     |                                     |                |           | Generator          | (Rev.   |                |            |                      |
+|                                     |                                     |                |           |                    | 4)      |                |            |                      |
++-------------------------------------+-------------------------------------+----------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_mdm_1_0                   | IP revision change                  | Upgrade IP     |  *(8)     | MicroBlaze Debug   | 3.2     | 3.2 (Rev. 23)  | Included   | xc7a35tcpg236-1      |
+|                                     |                                     |                |           | Module (MDM)       | (Rev.   |                |            |                      |
+|                                     |                                     |                |           |                    | 18)     |                |            |                      |
++-------------------------------------+-------------------------------------+----------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_microblaze_0_0            | IP revision change                  | Upgrade IP     |  *(9)     | MicroBlaze         | 11.0    | 11.0 (Rev. 10) | Included   | xc7a35tcpg236-1      |
+|                                     |                                     |                |           |                    | (Rev.   |                |            |                      |
+|                                     |                                     |                |           |                    | 3)      |                |            |                      |
++-------------------------------------+-------------------------------------+----------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_microblaze_0_axi_periph_0 | IP revision change                  | Upgrade IP     |  *(10)    | AXI Interconnect   | 2.1     | 2.1 (Rev. 28)  | Included   | xc7a35tcpg236-1      |
+|                                     |                                     |                |           |                    | (Rev.   |                |            |                      |
+|                                     |                                     |                |           |                    | 22)     |                |            |                      |
++-------------------------------------+-------------------------------------+----------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| hw2_part1_rst_clk_wiz_0_100M_0      | IP board change                     | Retarget IP    |  *(11)    | Processor System   | 5.0     | 5.0 (Rev. 13)  | Included   | xc7a35tcpg236-1      |
+|                                     |                                     |                |           | Reset              | (Rev.   |                |            |                      |
+|                                     |                                     |                |           |                    | 13)     |                |            |                      |
++-------------------------------------+-------------------------------------+----------------+-----------+--------------------+---------+----------------+------------+----------------------+
+*(1) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_uartlite_v2_0/doc/axi_uartlite_v2_0_changelog.txt
+*(2) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/clk_wiz_v6_0/doc/clk_wiz_v6_0_changelog.txt
+*(3) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/lmb_bram_if_cntlr_v4_0/doc/lmb_bram_if_cntlr_v4_0_changelog.txt
+*(4) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/lmb_v10_v3_0/doc/lmb_v10_v3_0_changelog.txt
+*(5) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/lmb_bram_if_cntlr_v4_0/doc/lmb_bram_if_cntlr_v4_0_changelog.txt
+*(6) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/lmb_v10_v3_0/doc/lmb_v10_v3_0_changelog.txt
+*(7) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/blk_mem_gen_v8_4/doc/blk_mem_gen_v8_4_changelog.txt
+*(8) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/mdm_v3_2/doc/mdm_v3_2_changelog.txt
+*(9) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/microblaze_v11_0/doc/microblaze_v11_0_changelog.txt
+*(10) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(11) e:/Xilinx/Vivado/2022.2/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+
+
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {hw2_part1_clk_wiz_0_0 hw2_part1_dlmb_bram_if_cntlr_0 hw2_part1_microblaze_0_axi_periph_0 hw2_part1_rst_clk_wiz_0_100M_0 hw2_part1_microblaze_0_0 hw2_part1_axi_uartlite_0_0 hw2_part1_ilmb_bram_if_cntlr_0 hw2_part1_dlmb_v10_0 hw2_part1_ilmb_v10_0 hw2_part1_mdm_1_0 hw2_part1_lmb_bram_0}] -log ip_upgrade.log
+Upgrading 'C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/sources_1/bd/hw2_part1/hw2_part1.bd'
+WARNING: [IP_Flow 19-4050] The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+WARNING: [IP_Flow 19-3932] Unable to set the value 'usb_uart' on parameter 'UARTLITE BOARD INTERFACE' due to the following failure - 
+Value 'usb_uart' is out of the range for parameter 'UARTLITE BOARD INTERFACE(UARTLITE_BOARD_INTERFACE)' for BD Cell 'hw2_part1_axi_uartlite_0_0' . Valid values are - Custom
+. Restoring to an old valid value of 'Custom'
+INFO: [IP_Flow 19-3422] Upgraded hw2_part1_axi_uartlite_0_0 (AXI Uartlite 2.0) from revision 25 to revision 31
+WARNING: [IP_Flow 19-4050] The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+WARNING: [IP_Flow 19-3438] Customization errors found on 'hw2_part1_clk_wiz_0_0'. Restoring to previous valid configuration.
+WARNING: [IP_Flow 19-1721] During upgrade of 'hw2_part1_clk_wiz_0_0':
+The upgraded user parameter set contained parameters that could not be mapped on to the upgraded IP. When checking the upgrade script, note that parameter names are case sensitive.
+
+CRITICAL WARNING: [IP_Flow 19-3421] Upgrade of 'hw2_part1_clk_wiz_0_0' (Clocking Wizard 6.0) from revision 5 to revision 11 has resulted in an incomplete parameterization. Please review the message log, and recustomize this instance before continuing with your design.
+INFO: [IP_Flow 19-3422] Upgraded hw2_part1_dlmb_bram_if_cntlr_0 (LMB BRAM Controller 4.0) from revision 18 to revision 21
+INFO: [IP_Flow 19-3422] Upgraded hw2_part1_dlmb_v10_0 (Local Memory Bus (LMB) 1.0 3.0) from revision 11 to revision 12
+INFO: [IP_Flow 19-3422] Upgraded hw2_part1_ilmb_bram_if_cntlr_0 (LMB BRAM Controller 4.0) from revision 18 to revision 21
+INFO: [IP_Flow 19-3422] Upgraded hw2_part1_ilmb_v10_0 (Local Memory Bus (LMB) 1.0 3.0) from revision 11 to revision 12
+INFO: [IP_Flow 19-3422] Upgraded hw2_part1_lmb_bram_0 (Block Memory Generator 8.4) from revision 4 to revision 5
+INFO: [IP_Flow 19-3422] Upgraded hw2_part1_mdm_1_0 (MicroBlaze Debug Module (MDM) 3.2) from revision 18 to revision 23
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'C_ICACHE_HIGHADDR' from '0x000000003fffffff' to '0x000000003FFFFFFF' has been ignored for IP 'hw2_part1_microblaze_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'C_DCACHE_HIGHADDR' from '0x000000003fffffff' to '0x000000003FFFFFFF' has been ignored for IP 'hw2_part1_microblaze_0_0'
+INFO: [IP_Flow 19-3422] Upgraded hw2_part1_microblaze_0_0 (MicroBlaze 11.0) from revision 3 to revision 10
+INFO: [IP_Flow 19-3422] Upgraded hw2_part1_microblaze_0_axi_periph_0 (AXI Interconnect 2.1) from revision 22 to revision 28
+INFO: [IP_Flow 19-3420] Updated hw2_part1_rst_clk_wiz_0_100M_0 to use current project options
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'hw2_part1_axi_uartlite_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'hw2_part1_clk_wiz_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'hw2_part1_microblaze_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\Users\mvbos\Desktop\SoC\SoC_Design\HW2\HW2_part1\HW2_part1.srcs\sources_1\bd\hw2_part1\hw2_part1.bd> 
+Wrote  : <C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/sources_1/bd/hw2_part1/ui/bd_6241f382.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 1528.172 ; gain = 126.707
+export_ip_user_files -of_objects [get_ips {hw2_part1_clk_wiz_0_0 hw2_part1_dlmb_bram_if_cntlr_0 hw2_part1_microblaze_0_axi_periph_0 hw2_part1_rst_clk_wiz_0_100M_0 hw2_part1_microblaze_0_0 hw2_part1_axi_uartlite_0_0 hw2_part1_ilmb_bram_if_cntlr_0 hw2_part1_dlmb_v10_0 hw2_part1_ilmb_v10_0 hw2_part1_mdm_1_0 hw2_part1_lmb_bram_0}] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/sources_1/bd/hw2_part1/hw2_part1.bd]
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0_local_memory/dlmb_bram_if_cntlr/LMB_Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0_local_memory/dlmb_v10/LMB_Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0_local_memory/ilmb_bram_if_cntlr/LMB_Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0_local_memory/ilmb_v10/LMB_Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_uartlite_0/s_axi_aclk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0/Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /rst_clk_wiz_0_100M/slowest_sync_clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2_part1/HW2_part1.srcs/sources_1/bd/hw2_part1/hw2_part1.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+validate_bd_design
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0_local_memory/dlmb_bram_if_cntlr/LMB_Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0_local_memory/dlmb_v10/LMB_Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0_local_memory/ilmb_bram_if_cntlr/LMB_Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0_local_memory/ilmb_v10/LMB_Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_uartlite_0/s_axi_aclk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0/Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /rst_clk_wiz_0_100M/slowest_sync_clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+validate_bd_design
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0_local_memory/dlmb_bram_if_cntlr/LMB_Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0_local_memory/dlmb_v10/LMB_Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0_local_memory/ilmb_bram_if_cntlr/LMB_Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0_local_memory/ilmb_v10/LMB_Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /axi_uartlite_0/s_axi_aclk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /microblaze_0/Clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /rst_clk_wiz_0_100M/slowest_sync_clk(83000000) and /clk_wiz_0/clk_out1(100000000)
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+startgroup
+set_property -dict [list \
+  CONFIG.CLKOUT1_JITTER {132.282} \
+  CONFIG.CLKOUT1_PHASE_ERROR {95.856} \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {83} \
+  CONFIG.MMCM_CLKFBOUT_MULT_F {10.375} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {12.500} \
+] [get_bd_cells clk_wiz_0]
+endgroup
+validate_bd_design
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+report_ip_status -name ip_status 

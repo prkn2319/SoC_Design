@@ -1,0 +1,384 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Feb 23 19:25:53 2023
+# Process ID: 19532
+# Current directory: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.runs/hw2_part2_RSA_0_0_synth_1
+# Command line: vivado.exe -log hw2_part2_RSA_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hw2_part2_RSA_0_0.tcl
+# Log file: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.runs/hw2_part2_RSA_0_0_synth_1/hw2_part2_RSA_0_0.vds
+# Journal file: C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.runs/hw2_part2_RSA_0_0_synth_1\vivado.jou
+# Running On: DESKTOP-5C5IMB2, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 4, Host memory: 12779 MB
+#-----------------------------------------------------------
+source hw2_part2_RSA_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 410.797 ; gain = 83.613
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/ip_repo/RSA_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hw2_part2_RSA_0_0
+Command: synth_design -top hw2_part2_RSA_0_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18536
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1227.059 ; gain = 407.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'hw2_part2_RSA_0_0' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ip/hw2_part2_RSA_0_0/synth/hw2_part2_RSA_0_0.vhd:82]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'RSA_v1_0' declared at 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/hdl/RSA_v1_0.vhd:5' bound to instance 'U0' of component 'RSA_v1_0' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ip/hw2_part2_RSA_0_0/synth/hw2_part2_RSA_0_0.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'RSA_v1_0' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/hdl/RSA_v1_0.vhd:49]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'RSA_v1_0_S00_AXI' declared at 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/hdl/RSA_v1_0_S00_AXI.vhd:5' bound to instance 'RSA_v1_0_S00_AXI_inst' of component 'RSA_v1_0_S00_AXI' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/hdl/RSA_v1_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'RSA_v1_0_S00_AXI' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/hdl/RSA_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-226] default block is never used [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/hdl/RSA_v1_0_S00_AXI.vhd:267]
+INFO: [Synth 8-226] default block is never used [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/hdl/RSA_v1_0_S00_AXI.vhd:505]
+WARNING: [Synth 8-614] signal 'axi_araddr' is read in the process but is not in the sensitivity list [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/hdl/RSA_v1_0_S00_AXI.vhd:500]
+	Parameter KEYSIZE bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'RSACypher' declared at 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:30' bound to instance 'rsa_cypher' of component 'RSACypher' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/hdl/RSA_v1_0_S00_AXI.vhd:569]
+INFO: [Synth 8-638] synthesizing module 'RSACypher' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:43]
+	Parameter MPWID bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'modmult32' declared at 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/modmult.vhd:30' bound to instance 'modmult' of component 'modmult32' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'modmult32' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/modmult.vhd:42]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/modmult.vhd:111]
+WARNING: [Synth 8-614] signal 'prodreg4' is read in the process but is not in the sensitivity list [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/modmult.vhd:111]
+INFO: [Synth 8-256] done synthesizing module 'modmult32' (0#1) [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/modmult.vhd:42]
+	Parameter MPWID bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'modmult32' declared at 'c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/modmult.vhd:30' bound to instance 'modsqr' of component 'modmult32' [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:97]
+INFO: [Synth 8-256] done synthesizing module 'RSACypher' (0#1) [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'RSA_v1_0_S00_AXI' (0#1) [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/hdl/RSA_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'RSA_v1_0' (0#1) [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/hdl/RSA_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'hw2_part2_RSA_0_0' (0#1) [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ip/hw2_part2_RSA_0_0/synth/hw2_part2_RSA_0_0.vhd:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mcreg2_reg' and it is trimmed from '130' to '129' bits. [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/modmult.vhd:75]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg12_reg was removed.  [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/hdl/RSA_v1_0_S00_AXI.vhd:260]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg13_reg was removed.  [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/hdl/RSA_v1_0_S00_AXI.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg14_reg was removed.  [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/hdl/RSA_v1_0_S00_AXI.vhd:262]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg15_reg was removed.  [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/hdl/RSA_v1_0_S00_AXI.vhd:263]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module RSA_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module RSA_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module RSA_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module RSA_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module RSA_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module RSA_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1330.152 ; gain = 510.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1330.152 ; gain = 510.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1330.152 ; gain = 510.461
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1330.152 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1443.172 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1443.180 ; gain = 0.008
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1443.180 ; gain = 623.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1443.180 ; gain = 623.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1443.180 ; gain = 623.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1443.180 ; gain = 623.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input  130 Bit       Adders := 2     
+	   3 Input  130 Bit       Adders := 4     
+	   3 Input  129 Bit       Adders := 2     
++---Registers : 
+	              130 Bit    Registers := 6     
+	              128 Bit    Registers := 9     
+	               32 Bit    Registers := 13    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input  130 Bit        Muxes := 8     
+	   2 Input  129 Bit        Muxes := 2     
+	   2 Input  128 Bit        Muxes := 13    
+	   2 Input  127 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 12    
+	  16 Input   32 Bit        Muxes := 12    
+	   2 Input    1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module RSA_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module RSA_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module RSA_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module RSA_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module RSA_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module RSA_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1443.180 ; gain = 623.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1443.180 ; gain = 623.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1443.180 ; gain = 623.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[127]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[127] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[126]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[126] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[125]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[125] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[124]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[124] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[123]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[123] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[122]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[122] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[121]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[121] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[120]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[120] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[119]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[119] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[118]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[118] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[117]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[117] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[116]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[116] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[115]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[115] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[114]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[114] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[113]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[113] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[112]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[112] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[111]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[111] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[110]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[110] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[109]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[109] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[108]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[108] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[107]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[107] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[106]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[106] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[105]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[105] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[104]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[104] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[103]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[103] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[102]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[102] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[101]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[101] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[100]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[100] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[99]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[99] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[98]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[98] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[97]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[97] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[96]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[96] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[95]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[95] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[94]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[94] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[93]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[93] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[92]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[92] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[91]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[91] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[90]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[90] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[89]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[89] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[88]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[88] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[87]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[87] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[86]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[86] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[85]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[85] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[84]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[84] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[83]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[83] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[82]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[82] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[81]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[81] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[80]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[80] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[79]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[79] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[78]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[78] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[77]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[77] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[76]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[76] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[75]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[75] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[74]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[74] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[73]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[73] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[72]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[72] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[71]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[71] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[70]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[70] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[69]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[69] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[68]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[68] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[67]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[67] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[66]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[66] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[65]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[65] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[64]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[64] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[63]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[63] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[62]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[62] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[61]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[61] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[60]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[60] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[59]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[59] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[58]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[58] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[57]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[57] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[56]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[56] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[55]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[55] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[54]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[54] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[53]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[53] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[52]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[52] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[51]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[51] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[50]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[50] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[49]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[49] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[48]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[48] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[47]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[47] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[46]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[46] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[45]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[45] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[44]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[44] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[43]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[43] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[42]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[42] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[41]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[41] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[40]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[40] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[39]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[39] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[38]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[38] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[37]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[37] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[36]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[36] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[35]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[35] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[34]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[34] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[33]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[33] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[32]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[32] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[31]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[31] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[30]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[30] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[29]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[29] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Synth 8-4765] Removing register instance (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[28]__0 ) from module (hw2_part2_RSA_0_0) as it is equivalent to (\U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/modreg_reg[28] ) and driving same net [c:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.gen/sources_1/bd/hw2_part2/ipshared/e366/src/rsacypher.vhd:90]
+INFO: [Common 17-14] Message 'Synth 8-4765' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1443.180 ; gain = 623.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin U0/RSA_v1_0_S00_AXI_inst/rsa_cypher/sqrgo_inferred:in0 to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 1443.180 ; gain = 623.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 1443.180 ; gain = 623.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1443.180 ; gain = 623.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1443.180 ; gain = 623.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1443.180 ; gain = 623.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:00:58 . Memory (MB): peak = 1443.180 ; gain = 623.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   324|
+|2     |LUT1   |    78|
+|3     |LUT2   |   779|
+|4     |LUT3   |  1199|
+|5     |LUT4   |     6|
+|6     |LUT5   |   648|
+|7     |LUT6   |   320|
+|8     |MUXF7  |    64|
+|9     |MUXF8  |    32|
+|10    |FDCE   |   640|
+|11    |FDPE   |     3|
+|12    |FDRE   |  1647|
+|13    |FDSE   |     7|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:00:58 . Memory (MB): peak = 1443.180 ; gain = 623.488
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:55 . Memory (MB): peak = 1443.180 ; gain = 510.461
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1443.180 ; gain = 623.488
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1443.180 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 420 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1443.180 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 5d61198a
+INFO: [Common 17-83] Releasing license: Synthesis
+140 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1443.180 ; gain = 999.582
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.runs/hw2_part2_RSA_0_0_synth_1/hw2_part2_RSA_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP hw2_part2_RSA_0_0, cache-ID = afd5a973c8a34f59
+INFO: [Coretcl 2-1174] Renamed 5 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mvbos/Desktop/SoC/SoC_Design/HW2/HW2Vivado/HW2/HW2.runs/hw2_part2_RSA_0_0_synth_1/hw2_part2_RSA_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file hw2_part2_RSA_0_0_utilization_synth.rpt -pb hw2_part2_RSA_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 23 19:27:20 2023...
